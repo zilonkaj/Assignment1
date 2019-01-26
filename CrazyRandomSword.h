@@ -23,8 +23,8 @@ public:
             https://www.cs.fsu.edu/~myers/c++/notes/rand.html
         */
 
-        srand(time(0));                 // seed random number generator
-        hitPoints = rand() % 94 + 7     // set hitPoints to random number between 7 - 100
+        srand(time(0));                                     // seed random number generator
+        hitPoints = static_cast<int>(rand() % 94 + 7)       // set hitPoints to random number between 7 - 100
     }
 
     virtual ~CrazyRandomSword() {};

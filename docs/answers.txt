@@ -1,0 +1,78 @@
+a.
+
+$ git commit -a -m"Add git status output to status.txt"
+[master ad91479] Add git status output to status.txt
+ 1 file changed, 11 insertions(+)
+$ git push
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 822 bytes | 822.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/zilonkaj/Assignment1.git
+   3d373c9..ad91479  master -> master
+
+b. There have been 5 commits to the repository overall: the first two were by Javier,
+and the past 3 have been committed by me. I used git log to get this information.
+
+c. The .gitignore file was last modified Thursday January 10, 2019 at 4:45 pm. I used
+git log --follow .gitignore to find this out.
+
+d. One reason why branches are used in a git repository is to allow developers to work
+simultaneously without messing up each other's changes. If one developer makes a change on
+a file at the same time as another, this can cause conflicts in git (or worse, overwrite
+someone's work). Another reason why branches are used is to start developing new features
+for a project without impacting the main release of the project. If the feature breaks other
+parts of the project, or if it just isn't finished yet, keeping it in a separate "development"
+branch protects the main project from constantly being broken.
+
+e. git log shows the history of all of the commits in the local repository, as well as who
+made those commits and what the individual commit messages were. git status shows the current
+status of the local repository: what branch we are on, if we are up to date with the remote,
+and what files have been modified or have already been committed and are ready to push.
+
+f. git log --follow Weapon.h
+
+g. git log --all --grep='file'
+
+h.
+    I.   Inheritance is the idea that a class can be a "sub-class" of an already existing class,
+         if it makes sense for those classes to be related in a hierarchy. This is used to prevent
+         unnecessary duplication of code that would otherwise occur if the classes didn't use
+         inheritance.
+
+    II.  Polymorphism is the idea that objects of different forms can share the same "interface"
+         inside of a programming language. Instead of having to hard code individual interfaces
+         for each and every object's abilities, the objects instead implement their functionality
+         behind a single interface that can be used on all of them. This concept is difficult to
+         understand in the abstract, so a good example is a group of cars. Each of these cars may
+         be made by a different manufacturer, have internal systems unique to that particular
+         model, and even have different capabilities, but they are all driven the same way: with
+         a steering wheel and pedals. The steering wheel and pedals are the "interface" that all
+         of the cars share.
+
+    III. Encapsulation is the concept of grouping data together with functions that can operate on
+         that data. Instead of accessing the data directly, encapsulation hides the data behind
+         an interface to enforce restrictions on what form that data can take, and what changes
+         can be made to it. This allows developers to create abstractions out of atomic data types,
+         while also keeping relevant information together in a "box" (or object).
+
+i.  The main difference between the "Dictator and Lieutenants” and the “Integration management”
+    workflows is who is in charge of merging and solving conflicts. In the Dictator workflow,
+    developers push to their assigned Lieutenant repositories, Lieutenants merge and solve
+    conflicts, and then push to the Dictator's repository. The Dictator then merges and solves
+    conflicts, and finally pushes the completed product to the central repository. In contrast,
+    the Integration workflow cuts out the lieutenants and assigns the role of the Dictator to
+    the Integration manager. Developers push to their own repositories, not someone else's, and
+    then the Integration manager pulls from the developer repositories, merges, solves conflicts,
+    and finally pushes to the central repository.
+
+j.  For a team of 100 developers, the Centralized workflow would be a disaster because then the
+    responsibility of merging and solving conflicts would become everyone's job. There would be
+    no control over who gets to push to the repository, which would immediately cause conflicts.
+    Further, since no one is in charge of integration, there is no guarantee the program will
+    work when the different components are combined together. With the Dictator workflow, the
+    Lieutenants and the Dictator are the ones responsible for merges, conflicts, and integration,
+    which frees the developers from those responsibilities and ensures that the code is checked in
+    stages.

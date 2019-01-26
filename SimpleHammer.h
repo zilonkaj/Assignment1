@@ -8,6 +8,8 @@
 #ifndef ASSIGNMENT1_SIMPLEHAMMER_H
 #define ASSIGNMENT1_SIMPLEHAMMER_H
 
+#include "Weapon.h"
+#include <string>
 
 class SimpleHammer : public Weapon {
 public:

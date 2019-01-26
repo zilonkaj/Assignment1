@@ -11,7 +11,7 @@
 #include "Weapon.h"
 #include <string>
 
-class LightningStaff {
+class LightningStaff : public Weapon {
 public:
 
     LightningStaff() : Weapon("Lightning staff",30)

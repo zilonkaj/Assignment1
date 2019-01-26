@@ -9,8 +9,16 @@
 #define ASSIGNMENT1_SIMPLEHAMMER_H
 
 
-class SimpleHammer {
+class SimpleHammer : public Weapon {
+public:
 
+    SimpleHammer : Weapon("Simple hammer",25.0)
+    {
+    }
+
+    virtual ~SimpleHammer() {};
+
+    virtual double hit(double armor);
 };
 
 

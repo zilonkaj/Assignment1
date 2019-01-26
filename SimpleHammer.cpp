@@ -6,3 +6,18 @@
  */
 
 #include "SimpleHammer.h"
+
+// SimpleHammer ignores armor if armor < 30
+double SimpleHammer::hit(double armor) {
+    if (armor < 30)
+        return hitPoints;
+    else
+    {
+        double damage = hitPoints - armor;
+
+        if (damage < 0)
+            return 0;
+        else
+            return damage;
+    }
+}

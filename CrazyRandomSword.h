@@ -27,7 +27,7 @@ public:
         hitPoints = rand() % 94 + 7     // set hitPoints to random number between 7 - 100
     }
 
-    virtual ~SimpleHammer() {};
+    virtual ~CrazyRandomSword() {};
 
     virtual double hit(double armor);
 };

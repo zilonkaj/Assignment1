@@ -12,7 +12,15 @@
 #include <string>
 
 class LightningStaff {
+public:
 
+    LightningStaff : Weapon("Lightning staff",30)
+    {
+    }
+
+    virtual ~LightningStaff() {};
+
+    virtual double hit(double armor);
 };
 
 

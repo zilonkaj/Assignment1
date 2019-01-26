@@ -14,7 +14,7 @@
 class LightningStaff {
 public:
 
-    LightningStaff : Weapon("Lightning staff",30)
+    LightningStaff() : Weapon("Lightning staff",30)
     {
     }
 

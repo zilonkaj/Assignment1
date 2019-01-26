@@ -17,14 +17,14 @@ class CrazyRandomSword : public Weapon {
 public:
 
     // Assign hitPoints to temporary value of 0 since real value will be calculated in constructor
-    CrazyRandomSword : Weapon("Crazy random sword",0)
+    CrazyRandomSword() : Weapon("Crazy random sword",0)
     {
         /*  Random number generation method taken from Bob Myer's notes:
             https://www.cs.fsu.edu/~myers/c++/notes/rand.html
         */
 
         srand(time(0));                                     // seed random number generator
-        hitPoints = static_cast<int>(rand() % 94 + 7)       // set hitPoints to random number between 7 - 100
+        hitPoints = static_cast<int>(rand() % 94 + 7);       // set hitPoints to random number between 7 - 100
     }
 
     virtual ~CrazyRandomSword() {};

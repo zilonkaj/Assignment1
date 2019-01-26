@@ -8,7 +8,6 @@
 #include "CrazyRandomSword.h"
 
 double CrazyRandomSword::hit(double armor) {
-    srand(time(0));                 // seed random number generator
 
     int thirdOfArmor = armor / 3;
 

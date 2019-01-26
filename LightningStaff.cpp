@@ -14,7 +14,7 @@ double LightningStaff::hit(double armor) {
     if (armor > 10)
         damage = hitPoints - armor;
     else
-        damage = (hitPoints - armor) * 2;   // Double damage on armor < 10
+        damage = (hitPoints * 2) - armor;   // Double damage on armor < 10
 
 
     if (damage < 0)

@@ -76,3 +76,7 @@ j.  For a team of 100 developers, the Centralized workflow would be a disaster b
     Lieutenants and the Dictator are the ones responsible for merges, conflicts, and integration,
     which frees the developers from those responsibilities and ensures that the code is checked in
     stages.
+
+5.  The RoleGame prototype is using polymorphism in how it implements the different weapons. The
+    weapons use polymorphism since they all have the same interface (the hit() and hit(armor)
+    functions), but each weapon implements hit() differently.
